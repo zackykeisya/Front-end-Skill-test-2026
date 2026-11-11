@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Influenzailla - bespoke design and marketing services</title>
-<link href="https://fonts.googleapis.com/css?family=Syne:400,500,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
-<script>
-window.dataLayer = window.dataLayer || [];
-(function(w,d,s,l,i){w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Influenzailla - bespoke design and marketing services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Unbounded:wght@200;300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
+<!-- ================= HERO & NAVBAR ================= -->
 <header class="hero" id="top">
   <div class="container hero-inner">
+    <!-- NAVBAR -->
     <div class="topbar">
       <a href="#top" class="brand">
-        <span class="brand-star"></span>
+        <svg class="brand-star" width="34" height="33" viewBox="0 0 34 33" aria-hidden="true">
+          <defs>
+            <linearGradient id="starGrad" x1="0" y1="0" x2="34" y2="0" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#C6F1F7"/><stop offset="0.36" stop-color="#F983E9"/>
+              <stop offset="0.74" stop-color="#B877FF"/><stop offset="1" stop-color="#C2E9CD"/>
+            </linearGradient>
+          </defs>
+          <path d="M16.7 0L19 10.9L27.7 4L22.4 13.8L33.5 14L23.1 18.1L31.5 25.5L20.9 22L22.6 33L16.7 23.5L10.9 33L12.6 22L2 25.5L10.3 18.1L0 14L11.1 13.8L5.8 4L14.5 10.9L16.7 0Z" fill="url(#starGrad)"/>
+        </svg>
         <span class="brand-name">Influenzailla</span>
         <span class="brand-tag">bespoke design and<br>marketing services</span>
       </a>
@@ -41,13 +47,33 @@ window.dataLayer = window.dataLayer || [];
       </nav>
     </div>
 
+    <!-- HERO BODY -->
     <div class="hero-body">
-      <p class="year">2023 <span class="small-note">hi there, let's<br>get started!</span></p>
-      <div class="hero-title">
-        <h1 class="title squiggle">Influence your<br>audience</h1>
-        <p class="hero-sub">boost your brand with our marketing expertise</p>
+      <div class="hero-top-meta">
+        <span class="year gradient-text">2023</span>
+        <span class="small-note gradient-text">hi there, let's<br>get started!</span>
       </div>
-      <p class="hero-note"><span class="spark"></span>We believe in the power of digital media to transform businesses and connect them with their audiences in meaningful ways.</p>
+
+      <div class="hero-main-title">
+        <h1 class="title title-hero">
+          Influence <span class="relative-word">
+            your
+            <svg class="svg-squiggle top" viewBox="0 0 100 12" preserveAspectRatio="none">
+              <path d="M0,6 Q5,0 10,6 T20,6 T30,6 T40,6 T50,6 T60,6 T70,6 T80,6 T90,6 T100,6" stroke="#C6F1F7" stroke-width="2" fill="none"/>
+            </svg>
+          </span><br>audience
+        </h1>
+        <p class="hero-sub">boost your brand with our<br>marketing expertise</p>
+      </div>
+
+      <div class="hero-right-note">
+        <svg class="spark-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.2" stroke-linejoin="round">
+          <path d="M12 0 L13.5 10.5 L24 12 L13.5 13.5 L12 24 L10.5 13.5 L0 12 L10.5 10.5 Z"/>
+        </svg>
+        <p class="text-white">
+          We believe in the power of<br>digital media to transform<br>businesses and connect them<br>with their audiences in<br>meaningful ways.
+        </p>
+      </div>
     </div>
 
     <ul class="quick-links">
@@ -59,121 +85,194 @@ window.dataLayer = window.dataLayer || [];
   </div>
 </header>
 
-<!-- ============ ABOUT / DIGITAL DREAMS ============ -->
+<!-- ================= INTRO / ABOUT ================= -->
 <section class="intro" id="about">
   <div class="container">
     <div class="intro-grid">
-
-      <!-- Row 1, Col 1: label -->
-      <p class="label intro-label">London 2006</p>
-
-      <!-- Row 1, Col 2: top two short paragraphs -->
-      <div class="intro-top-text">
-        <p>Our creative design bureau is based in the heart of London and specializes in digital branding, website design, and influence marketing.</p>
-        <p>We believe in the power of digital media to transform businesses and connect them with their audiences in meaningful ways.</p>
+      <div class="intro-col-left">
+        <p class="label gradient-text">London 2006</p>
       </div>
-
-      <!-- Row 2, Cols 1-3: heading starts at far-left (Column 1) -->
-      <h2 class="title intro-heading">
-        We turn your digital<br>
-        dreams into reality
-      </h2>
-
-      <!-- Row 3, Col 1: tilde wave, aligned under heading's left edge -->
-      <div class="squiggle-text" aria-hidden="true">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</div>
-
-      <!-- Row 4, Col 2: bottom two long paragraphs -->
-      <div class="intro-bottom-text">
-        <p>Our team of experienced designers and marketing professionals work closely with each client to understand their unique vision and develop tailored solutions that align with their goals.</p>
-        <p>From designing eye-catching logos and brand identities, to building custom websites that engage and convert visitors, to crafting effective influencer marketing campaigns, we are dedicated to helping our clients succeed in the digital space.</p>
+      <div class="intro-col-center">
+        <div class="intro-top-text">
+          <p>Our creative design bureau is based in the heart of London and specializes in digital branding, website design, and influence marketing.</p>
+          <p>We believe in the power of digital media to transform businesses and connect them with their audiences in meaningful ways.</p>
+        </div>
+        <h2 class="title intro-heading title-intro">
+          We turn your digital<br>dreams into <span class="relative-word">
+            reality
+            <svg class="svg-squiggle bottom" viewBox="0 0 100 12" preserveAspectRatio="none">
+              <path d="M0,6 Q5,0 10,6 T20,6 T30,6 T40,6 T50,6 T60,6 T70,6 T80,6 T90,6 T100,6" stroke="#C6F1F7" stroke-width="2" fill="none"/>
+            </svg>
+          </span>
+        </h2>
       </div>
-
-      <!-- Row 4, Col 3: 8-star flower icon + 3D sphere card -->
-      <div class="intro-side">
-        <span class="star-8" aria-hidden="true"></span>
+      <div class="intro-col-right">
         <div class="since-box">
-          <span class="orb" aria-hidden="true"></span>
+          <img src="assets/bulet-besar.png" alt="Orb" class="orb-img-large">
           <p>since<br>2006</p>
         </div>
+        <div class="intro-star-wrapper">
+          <svg class="intro-star" width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#fff" stroke-width="1.5" stroke-linejoin="round">
+            <path d="M17 0 L20 13 L34 17 L20 21 L17 34 L14 21 L0 17 L14 13 Z"/>
+            <path d="M17 7 L18.5 15.5 L27 17 L18.5 18.5 L17 27 L15.5 18.5 L7 17 L15.5 15.5 Z"/>
+          </svg>
+        </div>
       </div>
-
+      <div class="intro-bottom-text-wrapper">
+        <div class="intro-bottom-text">
+          <p>Our team of experienced designers and marketing professionals work closely with each client to understand their unique vision and develop tailored solutions that align with their goals.</p>
+          <p>From designing eye-catching logos and brand identities, to building custom websites that engage and convert visitors, to crafting effective influencer marketing campaigns, we are dedicated to helping our clients succeed in the digital space.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<!-- ============ /ABOUT ============ -->
 
+<!-- ================= SERVICES TILES ================= -->
 <section class="services" id="services">
   <div class="container">
     <ul class="tiles">
-      <li class="tile tile-1"><span class="tile-num">01</span><p>We create unique brand identities that resonate with your target audience and help you stand out in a crowded marketplace</p></li>
-      <li class="tile tile-2"><span class="tile-num">02</span><p>We build custom websites that are visually stunning, easy to navigate, and optimized for search engines</p></li>
-      <li class="tile tile-3"><span class="tile-num">03</span><p>We develop influencer campaigns that help you reach a wider audience, build brand awareness, and drive conversions</p></li>
-      <li class="tile tile-4"><span class="tile-num">04</span><p>We produce high-quality content that engages your audience, builds trust, and reinforces your brand message</p></li>
+      <li class="tile tile-1">
+        <span class="tile-num">01</span>
+        <p>We create unique brand identities that resonate with your target audience and help you stand out in a crowded marketplace</p>
+      </li>
+      <li class="tile tile-2">
+        <span class="tile-num">02</span>
+        <p>We build custom websites that are visually stunning, easy to navigate, and optimized for search engines</p>
+      </li>
+      <li class="tile tile-3">
+        <span class="tile-num">03</span>
+        <p>We develop influencer campaigns that help you reach a wider audience, build brand awareness, and drive conversions</p>
+      </li>
+      <li class="tile tile-4">
+        <span class="tile-num">04</span>
+        <p>We produce high-quality content that engages your audience, builds trust, and reinforces your brand message</p>
+      </li>
     </ul>
   </div>
 </section>
 
-<section class="objectives">
+<!-- ================= OBJECTIVES ================= -->
+<section class="objectives" id="objectives">
   <div class="container">
-    <h2 class="title squiggle">Help our clients achieve their business objectives</h2>
-    <div class="obj-grid">
-      <p class="label">London 2006</p>
-      <div class="obj-col">
-        <p>Influenzailla is a leading design and marketing agency that offers creative solutions to businesses of all sizes. Our team of experts specializes in creating unique and effective designs that help our clients stand out in a crowded market.</p>
+    <div class="obj-header">
+      <h2 class="title title-objectives">
+        Help our <span class="relative-word">
+          achieve
+          <svg class="svg-squiggle top" viewBox="0 0 100 12" preserveAspectRatio="none">
+            <path d="M0,6 Q5,0 10,6 T20,6 T30,6 T40,6 T50,6 T60,6 T70,6 T80,6 T90,6 T100,6" stroke="#C6F1F7" stroke-width="2" fill="none"/>
+          </svg>
+        </span><br>their business objectives
+      </h2>
+    </div>
+    <div class="objectives-grid">
+      <div class="obj-col-left">
+        <p class="label gradient-text">London 2006</p>
+        <svg class="obj-star-icon" width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#fff" stroke-width="1.5" stroke-linejoin="round">
+          <path d="M17 0 L20 13 L34 17 L20 21 L17 34 L14 21 L0 17 L14 13 Z"/>
+          <path d="M17 7 L18.5 15.5 L27 17 L18.5 18.5 L17 27 L15.5 18.5 L7 17 L15.5 15.5 Z"/>
+        </svg>
+      </div>
+      <div class="obj-col-text-1">
+        <p>Influenzilla is a leading design and marketing agency that offers creative solutions to businesses of all sizes. Our team of experts specializes in creating unique and effective designs that help our clients stand out in a crowded market.</p>
         <p>Our mission is to help our clients achieve their business objectives through innovative and effective design solutions. We believe that great design is more than just aesthetics. It's about creating a seamless user experience that engages and delights your audience.</p>
       </div>
-      <div class="obj-col">
+      <div class="obj-col-text-2">
         <p>We take pride in our ability to understand the unique needs and goals of each of our clients, and to develop customized solutions that exceed their expectations. Our team of talented designers and marketers work closely with our clients to create a cohesive brand identity, effective marketing strategies, and user-friendly websites and applications.</p>
         <p>We offer a wide range of services, including branding, web design, social media marketing, graphic design, and more. Our goal is to help our clients achieve success by providing them with the tools and resources they need to grow their business.</p>
       </div>
-    </div>
 
-    <div class="tabs">
-      <ul class="tab-list">
-        <li><button type="button" class="tab-btn active" data-tab="branding">Branding</button></li>
-        <li><button type="button" class="tab-btn" data-tab="design">Design</button></li>
-        <li><button type="button" class="tab-btn" data-tab="marketing">Marketing</button></li>
-      </ul>
-      <div class="tab-panel active" id="tab-branding">
-        <span class="orb orb-sm"></span>
-        <p>Our team of experts specializes in creating unique and effective designs</p>
-        <p>We created marketing materials that were consistent with the new brand identity, such as business cards, brochures, and social media graphics.</p>
+      <div class="obj-tabs-wrapper">
+        <ul class="obj-tab-list" role="tablist">
+          <li><button type="button" class="obj-tab-btn active" data-tab="branding" role="tab">Branding</button></li>
+          <li><button type="button" class="obj-tab-btn" data-tab="design" role="tab">Design</button></li>
+          <li><button type="button" class="obj-tab-btn" data-tab="marketing" role="tab">Marketing</button></li>
+        </ul>
+        <div class="obj-tab-panels">
+          <div class="obj-panel active" id="tab-branding" role="tabpanel">
+            <div class="obj-panel-inner">
+              <img src="assets/bulet-kecil.png" alt="Icon" class="orb-img-small">
+              <div class="obj-panel-text">
+                <p>Our team of experts specializes in creating unique and effective designs</p>
+                <p>We created marketing materials that were consistent with the new brand identity, such as business cards, brochures, and social media graphics.</p>
+              </div>
+            </div>
+          </div>
+          <div class="obj-panel" id="tab-design" role="tabpanel">
+            <div class="obj-panel-inner">
+              <img src="assets/bulet-kecil.png" alt="Icon" class="orb-img-small">
+              <div class="obj-panel-text">
+                <p>We design websites and interfaces that are clear, fast, and easy to use on any device</p>
+                <p>Every layout is built around your content and tested with real users before launch.</p>
+              </div>
+            </div>
+          </div>
+          <div class="obj-panel" id="tab-marketing" role="tabpanel">
+            <div class="obj-panel-inner">
+              <img src="assets/bulet-kecil.png" alt="Icon" class="orb-img-small">
+              <div class="obj-panel-text">
+                <p>We plan and run campaigns that reach the right audience at the right moment</p>
+                <p>From influencer partnerships to social media, we track results and adjust as we go.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="tab-panel" id="tab-design">
-        <span class="orb orb-sm"></span>
-        <p>We design websites and interfaces that are clear, fast, and easy to use on any device</p>
-        <p>Every layout is built around your content and tested with real users before launch.</p>
-      </div>
-      <div class="tab-panel" id="tab-marketing">
-        <span class="orb orb-sm"></span>
-        <p>We plan and run campaigns that reach the right audience at the right moment</p>
-        <p>From influencer partnerships to social media, we track results and adjust as we go.</p>
+
+      <div class="obj-col-footer">
+        <p>We specialize in creating unique and innovative designs that not only capture the essence of your business but also help you achieve your goals. We believe that great design is about creating a seamless user experience that engages and delights your audience, and we work hard to ensure that every design we create meets this high standard.</p>
       </div>
     </div>
-
-    <p class="obj-foot">We specialize in creating unique and innovative designs that not only capture the essence of your business but also help you achieve your goals. We believe that great design is about creating a seamless user experience that engages and delights your audience, and we work hard to ensure that every design we create meets this high standard.</p>
   </div>
 </section>
 
+<!-- ================= EXPERTISE BANNER ================= -->
 <section class="banner" id="expertise">
-  <div class="container">
-    <p class="small-note">hi there, let's<br>get started!</p>
-    <p class="small-note small-note-mid">hi there, let's<br>get started!</p>
-    <p class="small-note small-note-right">hi there, let's<br>get started!</p>
-    <h2 class="title squiggle">Expertise and experience</h2>
-    <p class="banner-text">We believe that building long-lasting relationships with our clients is key to achieving success. We are passionate about what we do, and we are committed to delivering exceptional results for every client we work with.</p>
+  <div class="container banner-inner">
+    <div class="banner-top-notes">
+      <p class="small-note gradient-text">hi there, let's<br>get started!</p>
+      <p class="small-note gradient-text">hi there, let's<br>get started!</p>
+      <p class="small-note gradient-text">hi there, let's<br>get started!</p>
+    </div>
+    <div class="banner-bottom-content">
+      <div class="banner-title-wrap">
+        <!-- Teks "and" dibungkus relative-word -->
+        <h2 class="title title-banner">
+          Expertise
+          <span class="relative-word">
+            and
+            <svg class="svg-squiggle top" viewBox="0 0 100 12" preserveAspectRatio="none">
+              <path d="M0,6 Q5,0 10,6 T20,6 T30,6 T40,6 T50,6 T60,6 T70,6 T80,6 T90,6 T100,6" stroke="#C6F1F7" stroke-width="2" fill="none"/>
+            </svg>
+          </span>
+          <br>
+          experience
+        </h2>
+      </div>
+      <div class="banner-text-wrap">
+        <p class="gradient-text">
+          We believe that building long-lasting relationships<br>with our clients is key to achieving success. We are<br>passionate about what we do, and we are<br>committed to delivering exceptional results for every<br>client we work with.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
+<!-- ================= CLOSING ================= -->
 <section class="closing" id="team">
   <div class="container">
     <div class="closing-grid">
-      <div class="closing-spacer"></div>
-      <div class="obj-col">
+      <div class="closing-col-left">
+        <svg class="closing-star" width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#fff" stroke-width="1.5" stroke-linejoin="round">
+          <path d="M17 0 L20 13 L34 17 L20 21 L17 34 L14 21 L0 17 L14 13 Z"/>
+          <path d="M17 7 L18.5 15.5 L27 17 L18.5 18.5 L17 27 L15.5 18.5 L7 17 L15.5 15.5 Z"/>
+        </svg>
+      </div>
+      <div class="closing-col-text">
         <p>Our team of talented designers and marketers works closely with each of our clients, taking the time to understand their unique needs and goals, and developing customized solutions that exceed their expectations.</p>
         <p>We take pride in our ability to create a cohesive brand identity, effective marketing strategies, and user-friendly websites and applications that help our clients achieve success.</p>
       </div>
-      <div class="obj-col">
+      <div class="closing-col-text">
         <p>So if you're a start-up looking to create a strong brand identity, or an established business looking to revamp your marketing strategy, we have the expertise and experience to help you succeed.</p>
         <p>Contact us today to learn more about our services and how we can help your business grow. We look forward to hearing from you and starting this exciting journey together.</p>
       </div>
@@ -181,15 +280,38 @@ window.dataLayer = window.dataLayer || [];
   </div>
 </section>
 
+<!-- ================= PROJECTS SLIDER ================= -->
 <section class="projects" id="cases">
   <div class="container">
-    <h2 class="title squiggle">Projects for our clients</h2>
+    <div class="projects-header">
+      <h2 class="title title-projects">
+        Projects for <span class="relative-word">
+          our
+          <svg class="svg-squiggle top" viewBox="0 0 100 12" preserveAspectRatio="none">
+            <path d="M0,6 Q5,0 10,6 T20,6 T30,6 T40,6 T50,6 T60,6 T70,6 T80,6 T90,6 T100,6" stroke="#C6F1F7" stroke-width="2" fill="none"/>
+          </svg>
+        </span> clients
+      </h2>
+    </div>
+    
     <div class="slider">
       <div class="slider-viewport">
         <ul class="slider-track" id="sliderTrack">
-          <li class="slide slide-1"><span class="slide-cat">branding</span><h3>Food store identity</h3><p>We worked with a local health food store to create a new brand identity that was both modern and eco-friendly.</p></li>
-          <li class="slide slide-2"><span class="slide-cat">web design</span><h3>Technology startup site</h3><p>We partnered with a technology startup to create a new website that would showcase their innovative product and attract investors.</p></li>
-          <li class="slide slide-3"><span class="slide-cat">marketing</span><h3>Fitness app launch</h3><p>We planned an influencer campaign for a new fitness app that doubled its sign-ups in the first month.</p></li>
+          <li class="slide slide-1">
+            <span class="slide-cat">branding</span>
+            <h3>Food store<br>identity</h3>
+            <p>We worked with a local health food store to create a new brand identity that was both modern and eco-friendly.</p>
+          </li>
+          <li class="slide slide-2">
+            <span class="slide-cat">web design</span>
+            <h3>Technology<br>startup site</h3>
+            <p>We partnered with a technology startup to create a new website that would showcase their innovative product and attract investors.</p>
+          </li>
+          <li class="slide slide-3">
+            <span class="slide-cat">marketing</span>
+            <h3>Fitness app launch</h3>
+            <p>We planned an influencer campaign for a new fitness app that doubled its sign-ups in the first month.</p>
+          </li>
         </ul>
       </div>
       <div class="slider-controls">
@@ -205,11 +327,20 @@ window.dataLayer = window.dataLayer || [];
   </div>
 </section>
 
+<!-- ================= FOOTER ================= -->
 <footer class="footer" id="footer">
   <div class="container">
     <div class="topbar">
       <a href="#top" class="brand">
-        <span class="brand-star"></span>
+        <svg class="brand-star" width="34" height="33" viewBox="0 0 34 33" aria-hidden="true">
+          <defs>
+            <linearGradient id="footGrad" x1="0" y1="0" x2="34" y2="0" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#C6F1F7"/><stop offset="0.36" stop-color="#F983E9"/>
+              <stop offset="0.74" stop-color="#B877FF"/><stop offset="1" stop-color="#C2E9CD"/>
+            </linearGradient>
+          </defs>
+          <path d="M17 0L19.2 10.9L27.9 4L22.6 13.8L33.7 14L23.4 18.1L31.7 25.5L21.2 22L22.8 33L17 23.5L11.2 33L12.8 22L2.3 25.5L10.6 18.1L0.3 14L11.4 13.8L6.1 4L14.8 10.9L17 0Z" fill="url(#footGrad)"/>
+        </svg>
         <span class="brand-name">Influenzailla</span>
         <span class="brand-tag">bespoke design and<br>marketing services</span>
       </a>
@@ -236,7 +367,62 @@ window.dataLayer = window.dataLayer || [];
   </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="assets/script.js"></script>
+<script>
+  // TABS LOGIC
+  const tabBtns = document.querySelectorAll('.obj-tab-btn');
+  const tabPanels = document.querySelectorAll('.obj-panel');
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.getAttribute('data-tab');
+      tabBtns.forEach(b => b.classList.remove('active'));
+      tabPanels.forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('tab-' + target).classList.add('active');
+    });
+  });
+
+  // SLIDER LOGIC
+  const track = document.getElementById('sliderTrack');
+  const dots = document.querySelectorAll('.dot');
+  const prevBtn = document.getElementById('prevSlide');
+  const nextBtn = document.getElementById('nextSlide');
+  let currentIndex = 0;
+  const totalSlides = document.querySelectorAll('.slide').length;
+  let slidesPerView = window.innerWidth > 768 ? 2 : 1;
+
+  function updateSlider() {
+    slidesPerView = window.innerWidth > 768 ? 2 : 1;
+    const slideWidth = 100 / slidesPerView;
+    track.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === currentIndex);
+    });
+  }
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalSlides - slidesPerView;
+    updateSlider();
+  });
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex < totalSlides - slidesPerView) ? currentIndex + 1 : 0;
+    updateSlider();
+  });
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      currentIndex = i;
+      updateSlider();
+    });
+  });
+  window.addEventListener('resize', updateSlider);
+
+  // Mobile Menu Toggle
+  const menuToggle = document.getElementById('menuToggle');
+  const mainNav = document.getElementById('mainNav');
+  menuToggle.addEventListener('click', () => {
+    const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', !expanded);
+    mainNav.classList.toggle('open');
+  });
+</script>
 </body>
 </html>
