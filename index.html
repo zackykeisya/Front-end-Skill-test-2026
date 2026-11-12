@@ -3,13 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Influenzailla - bespoke design and marketing services</title>
+  
+  <!-- GANTI "Balee" DENGAN NAMA KAMU -->
+  <title>Zacky - Front-end Developer Test</title>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W4TXX6LM');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google Analytics 4 (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDPDYPLBWJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KDPDYPLBWJ');
+  </script>
+  <!-- End Google Analytics 4 -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Unbounded:wght@200;300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4TXX6LM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
   
 <!-- ================= HERO & NAVBAR ================= -->
@@ -33,17 +58,17 @@
       <button type="button" class="menu-toggle" id="menuToggle" aria-expanded="false">Menu</button>
       <nav class="nav" id="mainNav">
         <ul class="nav-row">
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#cases">Cases</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="nav-globe"><a href="#top" aria-label="Language"><span class="globe"></span></a></li>
+          <li><a href="#about" data-track="nav" data-track-label="About">About</a></li>
+          <li><a href="#services" data-track="nav" data-track-label="Services">Services</a></li>
+          <li><a href="#cases" data-track="nav" data-track-label="Cases">Cases</a></li>
+          <li><a href="#team" data-track="nav" data-track-label="Team">Team</a></li>
+          <li class="nav-globe"><a href="#top" aria-label="Language" data-track="nav" data-track-label="Language"><span class="globe"></span></a></li>
         </ul>
         <ul class="nav-row nav-row-2">
-          <li><a href="#boost">Boost program</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#book">Book</a></li>
-          <li><a href="#blog">Blog</a></li>
+          <li><a href="#boost" data-track="nav" data-track-label="Boost Program">Boost program</a></li>
+          <li><a href="#products" data-track="nav" data-track-label="Products">Products</a></li>
+          <li><a href="#book" data-track="nav" data-track-label="Book">Book</a></li>
+          <li><a href="#blog" data-track="nav" data-track-label="Blog">Blog</a></li>
         </ul>
       </nav>
     </div>
@@ -347,28 +372,54 @@
       </a>
       <nav class="nav nav-footer">
         <ul class="nav-row">
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#cases">Cases</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="nav-globe"><a href="#top" aria-label="Language"><span class="globe"></span></a></li>
+          <li><a href="#about" data-track="footer_nav" data-track-label="About">About</a></li>
+          <li><a href="#services" data-track="footer_nav" data-track-label="Services">Services</a></li>
+          <li><a href="#cases" data-track="footer_nav" data-track-label="Cases">Cases</a></li>
+          <li><a href="#team" data-track="footer_nav" data-track-label="Team">Team</a></li>
+          <li class="nav-globe"><a href="#top" aria-label="Language" data-track="footer_nav" data-track-label="Language"><span class="globe"></span></a></li>
         </ul>
         <ul class="nav-row nav-row-2">
-          <li><a href="#boost">Boost program</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#book">Book</a></li>
-          <li><a href="#blog">Blog</a></li>
+          <li><a href="#boost" data-track="footer_nav" data-track-label="Boost Program">Boost program</a></li>
+          <li><a href="#products" data-track="footer_nav" data-track-label="Products">Products</a></li>
+          <li><a href="#book" data-track="footer_nav" data-track-label="Book">Book</a></li>
+          <li><a href="#blog" data-track="footer_nav" data-track-label="Blog">Blog</a></li>
         </ul>
       </nav>
       <ul class="footer-mobile">
-        <li><a href="#top">Menu</a></li>
-        <li><a href="#privacy">Privacy policy</a></li>
+        <li><a href="#top" data-track="footer_mobile" data-track-label="Menu">Menu</a></li>
+        <li><a href="#privacy" data-track="footer_mobile" data-track-label="Privacy Policy">Privacy policy</a></li>
       </ul>
     </div>
   </div>
 </footer>
 
 <script>
+  // TRACKING LOGIC - Kirim event ke GA4 saat tombol dengan data-track diklik
+  document.querySelectorAll('[data-track]').forEach(function(el) {
+    el.addEventListener('click', function() {
+      var category = this.getAttribute('data-track');
+      var label = this.getAttribute('data-track-label');
+      
+      // Kirim event ke GA4
+      if (typeof gtag === 'function') {
+        gtag('event', 'click', {
+          'event_category': category,
+          'event_label': label,
+          'value': 1
+        });
+      }
+      
+      // Kirim event ke GTM Data Layer
+      if (typeof dataLayer !== 'undefined') {
+        dataLayer.push({
+          'event': 'custom_click',
+          'click_category': category,
+          'click_label': label
+        });
+      }
+    });
+  });
+
   // TABS LOGIC
   const tabBtns = document.querySelectorAll('.obj-tab-btn');
   const tabPanels = document.querySelectorAll('.obj-panel');
